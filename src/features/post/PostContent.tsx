@@ -48,12 +48,12 @@ const PostContent = ({ }: Props) => {
 
     const contains = (comment: Comment, query: string) => {
         const { name, email, body } = comment;
-      
+
         if (isInclude(name, query) || isInclude(email, query) || isInclude(body, query)) {
-          return true;
+            return true;
         }
         return false;
-      };
+    };
 
     return (
         <SafeAreaView style={styles.container}>
@@ -126,13 +126,14 @@ const styles = StyleSheet.create({
         borderColor: 'grey'
     },
     searchBox: {
-        padding: 10,
+        paddingHorizontal: 10,
         borderRadius: 20,
         borderWidth: 1,
         borderColor: 'grey'
     },
     searchBar: {
         width: "100%",
+        height: 40,
         color: 'grey'
     },
     postContainer: {

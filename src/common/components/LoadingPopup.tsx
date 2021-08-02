@@ -14,7 +14,7 @@ const LoadingPopup = ({ visible }: LoadingPopupProps) => {
   return (
     <Animated.View pointerEvents="none" style={[styles.backdrop, { opacity }]}>
       <View style={styles.card}>
-        <ActivityIndicator size={44} animating={visible} />
+        <ActivityIndicator size={44} color="grey" animating={visible} />
         <Text style={styles.text}>Please wait...</Text>
       </View>
     </Animated.View>
